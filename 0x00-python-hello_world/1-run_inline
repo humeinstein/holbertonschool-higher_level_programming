@@ -1,2 +1,2 @@
 #!/bin/bash
-python pycode.py
+python -c $PYCODE
