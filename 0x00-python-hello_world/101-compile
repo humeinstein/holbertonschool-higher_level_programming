@@ -1,2 +1,2 @@
 #!/bin/bash
-python -m compileall ./PYFILEc my_main.pyc
+python -m compileall $PYFILEc
