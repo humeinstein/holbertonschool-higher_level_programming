@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     possibleops = ['+', '-', '*', '/']
     if ops not in possibleops:
-        print("Unknown operator. Available operators: +, -, * and / followed with a new line exit with the value 1")
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
     switcher = {
         '+': add(int(a), int(b)),
