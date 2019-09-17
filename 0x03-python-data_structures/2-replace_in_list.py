@@ -7,5 +7,5 @@ def replace_in_list(my_list, idx, element):
     else:
         for x, i in enumerate(my_list):
             if i == idx:
-                my_list[x + 1] = element
+                my_list[i] = element
         return(my_list) 
