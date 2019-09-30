@@ -9,7 +9,6 @@ def safe_print_list_integers(my_list=[], x=0):
                 realindex += 1
             index += 1
         print()
-        
-    except IndexError:
+    except (ValueError, TypeError):
         pass
     return(realindex)
