@@ -22,9 +22,9 @@ class Square:
         ###area needs privae __size
         return self.__size * self.__size
     def my_print(self):
+        if self.__size == 0:
+            print()
         for x in range(0, self.__size):
             for x in range(0, self.__size):
                 print("#".format(), end="")
             print("#")
-        if self.__size == 0:
-            print()
