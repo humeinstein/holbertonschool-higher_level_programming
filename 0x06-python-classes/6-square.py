@@ -5,7 +5,7 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
         self.__position = position       
-
+    ###size.setter
     @property
     def size(self):
         return self.__size
@@ -22,12 +22,13 @@ class Square:
         ###passed checks so execute###
         else:
             self.__size = value 
-
+    ###position.setter
     @property
     def position(self):
         return self.__position
     @position.setter
     def position(self, value):
+        ##check type of value
         if type(value) != tuple or value < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
@@ -38,6 +39,7 @@ class Square:
         return self.__size * self.__size
     
     def my_print(self):
+        ###check if __position1
         for x in range(0, self.__position[1]):
             print()
         for x in range(0, self.__size):
