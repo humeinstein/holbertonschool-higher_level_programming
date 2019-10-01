@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 class Square:
     def __init__(self, size=0):
-        self.size = size       
+        self.size = size
+    def __init__(self, size=0, position=(0, 0)):
+        self.__size = size
+        self.__position = position       
 
     @property
     def size(self):
@@ -35,9 +38,13 @@ class Square:
         return self.__size * self.__size
     
     def my_print(self):
+        for x in range(0, self.__position[1]):
+            print()
         for x in range(0, self.__size):
+            for x in range(0, self.__position[0]):
+                print(end="_")
             for x in range(0, self.__size):
-                print("#".format(), end="")
+                print("#".format(), end="")   
             print("#")
         if self.__size == 0:
             print()
