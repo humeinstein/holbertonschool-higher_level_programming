@@ -1,0 +1,11 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("hello:my:name?is?andrew")
+hello:
+<BLANKLINE>
+my:
+<BLANKLINE>
+name?
+<BLANKLINE>
+is?
+<BLANKLINE>
+andrew
