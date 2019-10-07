@@ -3,4 +3,7 @@
 initialize class Rectangle()
 """
 class Rectangle():
+    """
+    pass
+    """
     pass

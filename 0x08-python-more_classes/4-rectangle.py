@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-#!/usr/bin/python3
 """
 init Rectangle()
 
@@ -40,16 +38,26 @@ class Rectangle():
             raise TypeError("height must be >= 0")
         else:
             self.__height = value
-    """
-    returns area of h w
-    """
+
     def area(self):
-        """
-        gets area
-        """
         return self.__height * self.__width
     def perimeter(self):
-        newvalue1 = self.__height + self.__height
-        newvalue2 = self.__width + self.__width
+        if self.__height is 0 or self.__width is 0:
+            return 0
+        else:
+            newvalue1 = self.__height + self.__height
+            newvalue2 = self.__width + self.__width
         return newvalue1 + newvalue2
-    
+    def __str__(self):
+        detail = ""
+        if self.__width is 0 or self.__height is 0:
+            return detail
+        for x in range(self.__height):
+            detail += ("#" * self.__width)
+            detail += "\n"
+        return detail[:-1]
+    def __repr__(self):
+        """
+        prints repr
+        """
+        return "Rectangle({}, {})".format(self.__width, self.__height)
