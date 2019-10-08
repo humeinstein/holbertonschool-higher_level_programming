@@ -12,6 +12,9 @@ class Rectangle():
     """
 
     def __init__(self, width=0, height=0):
+        """
+        init
+        """
         self.height = height
         self.width = width
 
@@ -63,4 +66,7 @@ class Rectangle():
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
+        """
+        print message when del
+        """
         print("Bye rectanlge...")
