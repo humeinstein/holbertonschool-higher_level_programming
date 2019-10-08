@@ -40,7 +40,7 @@ class Rectangle():
             self.__height = value
 
     def area(self):
-        return self.__height * self.__width
+        return self.__width * self.__height
     def perimeter(self):
         if self.__height is 0 or self.__width is 0:
             return 0
@@ -63,4 +63,4 @@ class Rectangle():
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        print ("Bye rectanlge...")
+        print("Bye rectanlge...")
