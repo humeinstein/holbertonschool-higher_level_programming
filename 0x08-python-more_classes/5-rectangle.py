@@ -69,4 +69,5 @@ class Rectangle():
         """
         print message when del
         """
+        del (self)
         print("Bye rectanlge...")
