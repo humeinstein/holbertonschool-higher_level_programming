@@ -56,7 +56,7 @@ class Rectangle():
         for x in range(self.__height):
             detail += ("#" * self.__width)
             detail += "\n"
-        return detail[:-1]
+        return str(detail[:-1])
     def __repr__(self):
         """
         prints repr
