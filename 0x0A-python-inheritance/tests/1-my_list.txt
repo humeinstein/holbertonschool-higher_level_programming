@@ -1,0 +1,8 @@
+1-my_list
+
+importfunction:
+    >>> MyList = __import__("1-my_list").MyList
+    
+checkforinheritance:
+    >>> issubclass(MyList, list)
+    True
