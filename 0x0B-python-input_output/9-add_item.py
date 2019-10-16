@@ -13,6 +13,6 @@ try:
     my_list = load_from_json_file(filename)
 except:
     my_list = []
-for arg in argv[1:]::
+for arg in argv[1:]:
     my_list.append(arg)
 save_to_json_file(my_list, filename)
