@@ -7,13 +7,12 @@ from sys import argv
 save_to_json_file = __import__("7-save_to_json_file").save_to_json_file
 load_from_json_file = __import__("8-load_from_json_file").load_from_json_file
 
-filen = "add_item.json"
+filename = "add_item.json"
 
 try:
-    jsonl = load_from_json_file(filen)
+    my_list = load_from_json_file(filename)
 except:
-    jsonl = []
-
-for arg in argv[1:]:
-    jsonl.append(arg)
-save_to_json_file(jsonl, filen)
+    my_list = []
+for arg in argv[1:]::
+    my_list.append(arg)
+save_to_json_file(my_list, filename)
