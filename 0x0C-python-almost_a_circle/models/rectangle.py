@@ -7,7 +7,7 @@ from models.base import Base
 
 class Rectangle(Base):
     """ class construct """
-    
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """ class constructor """
         self.width = width
@@ -147,4 +147,3 @@ class Rectangle(Base):
             self.__x = args[3]
             self.__y = args[4]
             return
-    
