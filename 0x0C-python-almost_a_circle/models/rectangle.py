@@ -102,6 +102,7 @@ class Rectangle(Base):
         )
 
     def to_dictionary(self):
+        """ to dict """
         rectangledict = {
             'x': self.x,
             'y': self.y,
