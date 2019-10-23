@@ -65,6 +65,7 @@ class Rectangle(Base):
     def y(self):
         """ gets y """
         return(self.__y)
+
     @y.setter
     def y(self, value):
         """ sets y """
@@ -90,19 +91,19 @@ class Rectangle(Base):
             print(" " * self.x, end="")
             print("#" * self.width)
         detail = ""
-    
+
     def __str__(self):
         """print string rep"""
-        return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format\
-            (self.id, self.x, self.y, self.width, self.height)
-    
+        return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.id,
+                                                                 self.x, self.y, self.width, self.height)
+
     def to_dictionary(self):
-        rectangledict = { 
+        rectangledict = {
             'x': self.x,
             'y': self.y,
             'id': self.id,
             'height': self.height,
-            'width': self.width          
+            'width': self.width
         }
         return rectangledict
 
