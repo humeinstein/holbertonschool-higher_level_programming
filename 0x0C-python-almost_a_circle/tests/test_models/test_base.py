@@ -3,8 +3,8 @@
 """ unitests """
 
 import unittest
-from models.base import Base
 import pep8
+from models.base import Base
 
 
 
