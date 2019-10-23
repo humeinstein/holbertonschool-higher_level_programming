@@ -1,18 +1,14 @@
 #!/usr/bin/python3
+"""me and steve testing why im not getting checks"""
 
-""" unitests """
-
+import pep8
 import unittest
-from models.base import Base
+import models.base
+import models.rectangle
+
+Rectangle = models.rectangle.Rectangle
+Base = models.base.Base
 
 
-
-class Testbase_create(unittest.TestCase):
-    """ test creation """
-    def testforstring(self):
-        self.assertEqual("wow", Base("wow").id)
-        
-    def argumentss(self):
-        test = Base()
-        test2 = Base()
-        self.assertEqual(test.id, test2.id - 1)
+class RectangleTest(unittest.TestCase):
+    """Test cases for rectangle"""
