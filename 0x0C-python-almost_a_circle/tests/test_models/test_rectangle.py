@@ -12,5 +12,4 @@ def test_pep8_conformance(self):
 
         pep8style = pep8.StyleGuide(quiet=True)
         result = pep8style.check_files(["models/rectangle.py"])
-        self.ae(result.total_errors, 0,
-                "Found code style errors (and warnings).")
+        self.ae(result.total_errors, 0, "Found code style errors (and warnings).")
