@@ -3,7 +3,7 @@
 """ unitests """
 
 import unittest
-from models.base import Base
+from models.square import Square
 
 
 def test_pep8_conformance(self):
