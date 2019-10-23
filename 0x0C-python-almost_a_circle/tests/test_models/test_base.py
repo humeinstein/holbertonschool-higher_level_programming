@@ -2,9 +2,12 @@
 
 """ unitests """
 
-import unittest
 import pep8
-from models.base import Base
+import unittest
+import models.base
+import models.rectangle
+import models.square
+import json
 
 
 
