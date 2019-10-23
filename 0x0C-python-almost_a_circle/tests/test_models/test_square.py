@@ -4,7 +4,7 @@
 
 import unittest
 from models.square import Square
-
+install pep8
 
 def test_pep8_conformance(self):
         """test that we conform to pep8"""
