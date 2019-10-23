@@ -79,7 +79,8 @@ class Base:
                     for i, x in row.items():
                         row[i] = int(x)
                     newli = csv.DictReader(csf, fieldnames=fieldnames)
-                    newli = [dict([k, int(v)] for k, v in d.items()) for d in list_dictionaries]
+                    newli = [dict([k, int(v)] for k, v in d.items())\
+                             for d in list_dictionaries]
                     return [cls.create(**d) for d in list_dictionaries]
         except:
                 return []
