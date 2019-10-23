@@ -90,7 +90,6 @@ class Rectangle(Base):
         for i in range(self.height):
             print(" " * self.x, end="")
             print("#" * self.width)
-        detail = ""
 
     def __str__(self):
         """print string rep"""
