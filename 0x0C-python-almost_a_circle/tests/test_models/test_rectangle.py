@@ -3,16 +3,14 @@
 """ unitests """
 
 import unittest
-from models.base import Base
+from models.rectangle import Rectangle
+import pep8
 
 
+def test_pep8_conformance(self):
+        """test that we conform to pep8"""
 
-class Testbase_create(unittest.TestCase):
-    """ test creation """
-    def testforstring(self):
-        self.assertEqual("wow", Base("wow").id)
-        
-    def argumentss(self):
-        test = Base()
-        test2 = Base()
-        self.assertEqual(test.id, test2.id - 1)
+        pep8style = pep8.StyleGuide(quiet=True)
+        result = pep8style.check_files(["models/rectangle.py"])
+        self.ae(result.total_errors, 0,
+                "Found code style errors (and warnings).")
