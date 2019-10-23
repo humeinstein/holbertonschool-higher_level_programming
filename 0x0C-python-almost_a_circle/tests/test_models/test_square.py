@@ -2,9 +2,12 @@
 
 """ unitests """
 
-import unittest
-from models.square import Square
 import pep8
+import unittest
+import models.base
+import models.rectangle
+import models.square
+import json
 
 def test_pep8_conformance(self):
         """test that we conform to pep8"""
