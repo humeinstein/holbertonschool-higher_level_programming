@@ -3,7 +3,7 @@
 """ unitests """
 
 import unittest
-from models.base import Base
+from models.rectangle import Rectangle
 
 
 def test_pep8_conformance(self):
