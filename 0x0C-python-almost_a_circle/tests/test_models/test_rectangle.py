@@ -4,6 +4,7 @@
 
 import unittest
 from models.rectangle import Rectangle
+import pep8
 
 
 def test_pep8_conformance(self):
