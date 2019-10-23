@@ -31,6 +31,7 @@ class Square(Rectangle):
             self.width = value
 
     def to_dictionary(self):
+        """ dictionary """
         squaredict = {
             'id': self.id,
             'x': self.x,
@@ -40,7 +41,7 @@ class Square(Rectangle):
         return squaredict
 
     def update(self, *args, **kwargs):
-
+        """ update """
         precheck = len(args)
         if precheck == 0:
             """ set kwargs """
