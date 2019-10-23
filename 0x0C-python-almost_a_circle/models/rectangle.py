@@ -130,8 +130,8 @@ class Rectangle(Base):
             return
         elif precheck == 3:
             self.id = args[0]
-            self.__width = args[2]
-            self.__height = args[3]
+            self.__width = args[1]
+            self.__height = args[2]
             return
         elif precheck == 4:
             self.id = args[0]
