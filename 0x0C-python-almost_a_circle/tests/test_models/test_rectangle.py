@@ -11,6 +11,7 @@ import json
 
 
 class TestRectangle(unittest.TestCase):
+        """ hello """
         def test_pep8_conformance(self):
                 """test that we conform to pep8"""
 
