@@ -9,19 +9,16 @@ import models.rectangle
 import models.square
 import json
 
+Base = models.base.Base
+Rectangle = models.rectangle.Rectangle
+Square = models.square.Square
 
-def test_pep8_conformance(self):
-    """test that we conform to pep8"""
+class TestBase(unittest.TestCase):
+        """testing"""
+        def test_pep8_conformance(self):
+                """test that we conform to pep8"""
 
-
-<< << << < HEAD
-pep8style = pep8.StyleGuide(quiet=True)
-result = pep8style.check_files(["models/square.py"])
-self.ae(result.total_errors, 0,
-        "Found code style errors (and warnings).")
-== == == =
-pep8style = pep8.StyleGuide(quiet=True)
-result = pep8style.check_files(["square.py"])
-self.ae(result.total_errors, 0,
-        "Found code style errors (and warnings).")
->>>>>> > df48d0280f006208ed6774d622b05776cce74bf3
+                pep8style = pep8.StyleGuide(quiet=True)
+                result = pep8style.check_files(["models/square.py"])
+                self.ae(result.total_errors, 0,
+                        "Found code style errors (and warnings).")
