@@ -1,24 +1,19 @@
 #!/usr/bin/python3
-
-""" unitests """
-
-import pep8
+""" unit tests for rectangle """
 import unittest
-import models.base
-import models.rectangle
-import models.square
-import json
+import pep8
+from models.rectangle import Rectangle
 
 Base = models.base.Base
 Rectangle = models.rectangle.Rectangle
 Square = models.square.Square
 
-class TestBase(unittest.TestCase):
-        """testing"""
-        def test_pep8_conformance(self):
-                """test that we conform to pep8"""
 
-                pep8style = pep8.StyleGuide(quiet=True)
-                result = pep8style.check_files(["models/square.py"])
-                self.ae(result.total_errors, 0,
-                        "Found code style errors (and warnings).")
+class TestSquare(unittest.TestCase):
+    """ Class rectangle tests """
+    def test_pep8(self):
+        """ tests prp8 formating """
+        pep8style = pep8.StyleGuide(quiet=True)
+        result = pep8style.check_files(['models/square.py'])
+        self.assertEqual(result.total_errors, 0,
+                         "Found code style erros (and warnings).")
