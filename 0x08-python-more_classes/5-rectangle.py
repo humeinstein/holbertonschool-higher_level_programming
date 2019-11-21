@@ -6,7 +6,9 @@ allow init with width and height predetermined to 0 on default
 width and height values 
 
 """
-class Rectangle():
+
+
+class Rectangle:
     """
     class rectangle defined by width and height. 
     """
