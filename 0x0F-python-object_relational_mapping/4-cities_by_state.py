@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Write a script that lists all cities from the database hbtn_0e_4_usa"""
+""" list all states from database """
 
 if __name__ == "__main__":
 
@@ -19,8 +19,7 @@ if __name__ == "__main__":
             port=3306)
 
         cursor = db.cursor()
-        cursor = db.cursor()
-        squery = """ SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON states.id = cities.state_id ORDER BY cities.id ASC"""	        squery = """ SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON states.id = cities.state_id ORDER BY cities.id ASC"""
+        squery = """ SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON states.id = cities.state_id ORDER BY cities.id ASC"""
 
         cursor.execute(squery)
         query_rows = cursor.fetchall()
