@@ -1,16 +1,15 @@
 #!/usr/bin/python3
 """ list all states from database """
-
 if __name__ == "__main__":
 
     import MySQLdb
     import sys
 
+
     if len(sys.argv) == 4:
         username = sys.argv[1]
         upassword = sys.argv[2]
         dbname = sys.argv[3]
-
         db = MySQLdb.connect(
             host="localhost",
             user=username,
@@ -19,7 +18,7 @@ if __name__ == "__main__":
             port=3306)
 
         cursor = db.cursor()
-        cursor.execute("SELECT * FROM states ORDER BY id ASC")
+        cursor.execute("SELECT * FROM states ORDER BY id ASC;")
         query_rows = cursor.fetchall()
         for row in query_rows:
             print("({}, '{}'".format(row[0], row[1]))
