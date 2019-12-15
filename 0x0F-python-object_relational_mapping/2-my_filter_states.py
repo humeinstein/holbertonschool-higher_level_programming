@@ -6,7 +6,6 @@ if __name__ == "__main__":
     import MySQLdb
     import sys
 
-
     if len(sys.argv) == 5:
         username = sys.argv[1]
         upassword = sys.argv[2]
@@ -22,7 +21,6 @@ if __name__ == "__main__":
         cursor = db.cursor()
         squery = "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC".format(
             sSearch)
-
 
         cursor.execute(squery)
         query_rows = cursor.fetchall()
