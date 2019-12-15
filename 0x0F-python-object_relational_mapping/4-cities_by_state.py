@@ -19,12 +19,8 @@ if __name__ == "__main__":
             port=3306)
 
         cursor = db.cursor()
-        squery =
-        """
-        SELECT cities.id, cities.name, states.name
-        FROM cities INNER JOIN states ON states.id = cities.state_id
-        ORDER BY cities.id ASC
-        """
+        cursor = db.cursor()
+        squery = """ SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON states.id = cities.state_id ORDER BY cities.id ASC"""	        squery = """ SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON states.id = cities.state_id ORDER BY cities.id ASC"""
 
         cursor.execute(squery)
         query_rows = cursor.fetchall()
