@@ -6,7 +6,6 @@ if __name__ == "__main__":
     import MySQLdb
     import sys
 
-
     if len(sys.argv) == 4:
         username = sys.argv[1]
         upassword = sys.argv[2]
@@ -21,7 +20,6 @@ if __name__ == "__main__":
 
         cursor = db.cursor()
         squery = """ SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON states.id = cities.state_id ORDER BY cities.id ASC"""
-
 
         cursor.execute(squery)
         query_rows = cursor.fetchall()
