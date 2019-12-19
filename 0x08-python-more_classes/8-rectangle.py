@@ -13,15 +13,18 @@ class Rectangle():
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
+        """ inits rec """
         self.height = height
         self.width = width
         Rectangle.number_of_instances += 1
 
     @property
     def width(self):
+        """ gets width """
         return self.width
     @width.setter
     def width(self, value):
+        """ sets width """
         if isinstance(value, int) is False:
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -30,9 +33,11 @@ class Rectangle():
             self.__width = value
     @property
     def height(self):
+        """ height getter """
         return self.__height
     @height.setter
     def height(self, value):
+        """ sets height """
 
         if isinstance(value, int) is False:
             raise TypeError("height must be an integer")
@@ -42,8 +47,10 @@ class Rectangle():
             self.__height = value
 
     def area(self):
+        """ gets area"""
         return self.__height * self.__width
     def perimeter(self):
+        """ perimiter """
         if self.__height is 0 or self.__width is 0:
             return 0
         else:
@@ -51,6 +58,7 @@ class Rectangle():
             newvalue2 = self.__width + self.__width
         return newvalue1 + newvalue2
     def __str__(self):
+        """ string rep """
         detail = ""
         if self.__width is 0 or self.__height is 0:
             return detail
@@ -65,11 +73,13 @@ class Rectangle():
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
+        """delete self"""
         del self
         print ("Bye rectanlge...")
         Rectangle.number_of_instances -= 1
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
+      """ bigger or equal """
         if isinstance(rect_1, Rectangle) is False:
             raise TypeError("rect_1 must be an instance of Rectangle")
         if isinstance(rect_2, Rectangle) is False:
