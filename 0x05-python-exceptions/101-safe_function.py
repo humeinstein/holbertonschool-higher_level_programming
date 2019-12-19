@@ -2,7 +2,7 @@
 from sys import stderr
 
 
-def safe_function(fct, *arhs):
+def safe_function(fct, *args):
     try:
         result = fct(*args)
     except Exception as sf:
