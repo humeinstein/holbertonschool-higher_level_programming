@@ -22,6 +22,7 @@ class Rectangle():
     def width(self):
         """ gets width """
         return self.width
+
     @width.setter
     def width(self, value):
         """ sets width """
@@ -31,14 +32,15 @@ class Rectangle():
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
+
     @property
     def height(self):
         """ height getter """
         return self.__height
+
     @height.setter
     def height(self, value):
         """ sets height """
-
         if isinstance(value, int) is False:
             raise TypeError("height must be an integer")
         elif value < 0:
@@ -49,6 +51,7 @@ class Rectangle():
     def area(self):
         """ gets area"""
         return self.__height * self.__width
+   
     def perimeter(self):
         """ perimiter """
         if self.__height is 0 or self.__width is 0:
@@ -57,6 +60,7 @@ class Rectangle():
             newvalue1 = self.__height + self.__height
             newvalue2 = self.__width + self.__width
         return newvalue1 + newvalue2
+    
     def __str__(self):
         """ string rep """
         detail = ""
@@ -66,6 +70,7 @@ class Rectangle():
             detail += str((self.print_symbol * self.__width))
             detail += "\n"
         return detail[:-1]
+    
     def __repr__(self):
         """
         prints repr
@@ -77,6 +82,7 @@ class Rectangle():
         del self
         print ("Bye rectanlge...")
         Rectangle.number_of_instances -= 1
+    
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
       """ bigger or equal """
