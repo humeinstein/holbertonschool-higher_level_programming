@@ -16,7 +16,7 @@ int check_cycle(listint *list)
   
   while (up != NULL && down->next != NULL)
     {
-      while (down->next->next != NULL)
+      if (down->next->next != NULL)
 	{
 	  if (up == down)
 	    return (1);
