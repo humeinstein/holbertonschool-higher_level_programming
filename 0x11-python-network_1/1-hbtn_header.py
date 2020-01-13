@@ -4,10 +4,11 @@ import sys
 import urllib.request
 
 
-url = str(sys.argv[1])
+if __name__ == "__main__":
+    url = str(sys.argv[1])
 
-with urllib.request.urlopen(url) as response:
-    metainfo = response.info()
-    for search in metainfo._headers:
-        if "X-Request-Id" in search:
-            print(search[1])
+    with urllib.request.urlopen(url) as response:
+        metainfo = response.info()
+        for search in metainfo._headers:
+            if "X-Request-Id" in search:
+                print(search[1])
