@@ -20,7 +20,7 @@ const Rectangle = class Rectangle {
   }
 
   double () {
-    this.widht *= 2;
+    this.width *= 2;
     this.height *= 2;
   }
 };
